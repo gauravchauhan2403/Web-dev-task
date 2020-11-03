@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/styles.css">
+    <link rel="stylesheet" href="../Css/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="d-flex flex-column mb-3">
+  <div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html">Company Name</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link active" href="dashboard.html">Dashboard <span class="sr-only"></span></a>
+            </li>
+          </ul>
+          <a href="signin.html"><button class="btn btn-outline-primary my-2 mr-3 my-sm-0" type="submit">Sign In</button></a>
+          <a href="signup.html"><button class="btn btn-outline-info my-2 my-sm-0" type="submit">Sign Up</button></a>
+        </div>
+      </nav>
+  </div> 
+  <div>
+    <div class="container-fluid page-body-wrapper">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="navbar-brand-wrapper d-flex justify-content-center">
+          <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
+            <a class="navbar-brand brand-logo" href="#"><img src="#" alt="logo"/></a>
+          </div>  
+        </div>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="mdi mdi-home menu-icon"></i>
+              <span class="menu-title">Achievements</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="mdi mdi-chart-pie menu-icon"></i>
+              <span class="menu-title">Charts</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="mdi mdi-grid-large menu-icon"></i>
+              <span class="menu-title">Tables</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="auth">
+              <i class="mdi mdi-account menu-icon"></i>
+              <span class="menu-title">other Data</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="#"> Data1 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="#"> Data2 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="#"> Data3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#"> Data4</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-panel">
+        <div class="content-wrapper ">  
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="d-flex justify-content-between flex-wrap bg-gradient-primary">
+                <div class="d-flex align-items-end flex-wrap">
+                  <div class="mr-md-3 mr-xl-5">
+                    <h2>Welcome back,</h2>
+                    <p class="mb-md-0">Your Progress Report</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-end flex-wrap">
+                  <button type="button" class="btn btn-light bg-white btn-icon mr-3 d-none d-md-block ">
+                    <i class="mdi mdi-download text-muted"></i>2
+                  </button>
+                  <button type="button" class="btn btn-light bg-white btn-icon mr-3 mt-2 mt-xl-0">
+                    <i class="mdi mdi-clock-outline text-muted"></i>12
+                  </button>
+                  <button type="button" class="btn btn-light bg-white btn-icon mr-3 mt-2 mt-xl-0">
+                    <i class="mdi mdi-plus text-muted"></i>36
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body dashboard-tabs p-0">
+                  <ul class="nav nav-tabs px-4" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="sales-tab" data-toggle="tab" href="#sales" role="tab" aria-controls="sales" aria-selected="false">Sales</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content py-0 px-0">
+                    <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                      <div class="d-flex flex-wrap justify-content-xl-between">
+                        <div class="d-none d-xl-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-calendar-heart icon-lg mr-3 text-primary"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Start date</small>
+                            <div class="dropdown">
+                              <a class="btn btn-secondary dropdown-toggle p-0 bg-transparent border-0 text-dark shadow-none font-weight-medium" href="#" role="button" id="dropdownMenuLinkA" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <h5 class="mb-0 d-inline-block">26 Jul 2020</h5>
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkA">
+                                <a class="dropdown-item" href="#">12 Aug 2020</a>
+                                <a class="dropdown-item" href="#">22 Sep 2020</a>
+                                <a class="dropdown-item" href="#">21 Oct 2020</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-currency-usd mr-3 icon-lg text-danger"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Target Achieved</small>
+                            <h5 class="mr-2 mb-0">5</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-eye mr-3 icon-lg text-success"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Total views</small>
+                            <h5 class="mr-2 mb-0">3</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-download mr-3 icon-lg text-warning"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Downloads</small>
+                            <h5 class="mr-2 mb-0">2</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="sales" role="tabpanel" aria-labelledby="sales-tab">
+                      <div class="d-flex flex-wrap justify-content-xl-between">
+                        <div class="d-none d-xl-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-calendar-heart icon-lg mr-3 text-primary"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Start date</small>
+                            <div class="dropdown">
+                              <a class="btn btn-secondary dropdown-toggle p-0 bg-transparent border-0 text-dark shadow-none font-weight-medium" href="#" role="button" id="dropdownMenuLinkA" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <h5 class="mb-0 d-inline-block">26 Aug 2020</h5>
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkA">
+                                <a class="dropdown-item" href="#">30 Aug 2020</a>
+                                <a class="dropdown-item" href="#">22 Sep 2020</a>
+                                <a class="dropdown-item" href="#">21 Oct 2020</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-download mr-3 icon-lg text-warning"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Downloads</small>
+                            <h5 class="mr-2 mb-0">2</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-eye mr-3 icon-lg text-success"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Total views</small>
+                            <h5 class="mr-2 mb-0">35</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-currency-usd mr-3 icon-lg text-danger"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Revenue</small>
+                            <h5 class="mr-2 mb-0">7545</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-7 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title">Analytics</p>
+                  <p class="mb-4">To start a task, think of a topic about and first brainstorm party is ways to write details.</p>
+                  <div id="cash-deposits-chart-legend" class="d-flex justify-content-center pt-3"></div>
+                  <canvas id=""></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title">Total Sales</p>
+                  <h1> $ 28835</h1>
+                  <h4>Gross sales over the years</h4>
+                  <p class="text-muted">Today, many people rely on computers to do homework, work, and create or store useful information. Therefore, it is important </p>
+                  <div id="total-sales-chart-legend"></div>                  
+                </div>
+                <canvas id="total-sales-chart"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title">Table</p>
+                  <div class="table-responsive">
+                    <table id="recent-purchases-listing" class="table">
+                      <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Status report</th>
+                            <th>Check</th>
+                            <th>Price</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <td>Example 1</td>
+                            <td>Levelled up</td>
+                            <td>Verified</td>
+                            <td>$253</td>
+                        </tr>
+                        <tr>
+                            <td>Example 2</td>
+                            <td>Ui design completed</td>
+                            <td>Verified</td>
+                            <td>$3127</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div>
+      <footer>
+        <div class="card text-white bg-dark footer" style="max-width: 100%;">
+            <div class="card-body">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                  </svg>
+                <a href="#"> test@example.com</a>
+                <p class="text-white">Copyright &copy; 2020 Gaurav chauhan. All rights Reserved.</p>
+            </div>
+          </div>
+      </footer>
+  </div>
+  </div>
+  <!-- jQuery and JS bundle w/ Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

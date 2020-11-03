@@ -1,0 +1,15 @@
+.area {
+    display: flex;
+    margin-top: 10px;
+    margin: 0 auto;
+    width:70%;
+}
+
+.image {
+    margin-top: 100px;
+    padding: 15px;
+}
+
+.form{
+    padding: 15px;
+}
