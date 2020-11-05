@@ -2,3 +2,5 @@
 
 ### Hosting Link:
 [https://gauravchauhan2403.github.io/Web-dev-task/]
+
+A static website.
